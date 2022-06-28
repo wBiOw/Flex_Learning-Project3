@@ -1,0 +1,427 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: local("Segoe UI"),
+        url("../fonts/Segoe\ UI.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI italic";
+    src: local("Segoe UI"),
+        url("../fonts/Segoe\ UI\ Italic.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI bold";
+    src: local("Segoe UI"),
+        url("../fonts/Segoe\ UI\ Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI bold italic";
+    src: local("Segoe UI"),
+        url("../fonts/Segoe\ UI\ Bold\ Italic.ttf") format("ttf");
+}
+
+/* SLYLE OUTER  */
+body {
+
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+    overflow-x: hidden;
+}
+
+.hidenFromFone {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1146px;
+    margin: auto;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #006BA7;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button:hover,
+a:hover {
+    background-color: aqua;
+}
+
+/* SLYLE HEADER */
+header {
+    background-color: #BEB7D8;
+}
+
+.header {
+    color: #383838;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 90px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 150px;
+    height: 34.35px;
+}
+
+.contact a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #383838;
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.contact button {
+    width: 180px;
+    margin-left: 24px;
+}
+
+.tel {
+    background-image: url(../img/icons/phone\ icon.svg);
+    padding-left: 20px;
+}
+
+.skipe {
+    background-image: url(../img/icons/Skype\ icon.svg);
+    padding-left: 23px;
+
+}
+
+.telegram {
+    background-image: url(../img/icons/telegram\ icon.svg);
+    padding-left: 20px;
+}
+
+/* STYLE MAIN */
+/* STYLE CONTENT 1*/
+.content-kurs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 115px 0 154px;
+    position: relative;
+}
+
+.content-kurs h1 {
+    color: #006BA7;
+    font-size: 36px;
+    line-height: 10px;
+    position: relative;
+}
+
+.content-kurs p {
+    color: #383838;
+    font-size: 18px;
+    position: relative;
+}
+
+.content-kurs button {
+    width: 160px;
+    margin: 13px;
+}
+
+.background-image {
+    width: 313px;
+    height: 239px;
+    background-image: url(../img/laptop\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: 313px 239px;
+    position: absolute;
+    left: 790px;
+    top: 140px;
+}
+
+/* STYLE CONTENT 2*/
+.inform {
+    background-color: #BEB7D8;
+}
+
+.content-inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 72px 0 33px;
+}
+
+.inform-text {
+    width: 335px;
+    height: 143px;
+    font-size: 14px;
+}
+
+.inform-text p span:nth-of-type(odd) {
+    display: inline;
+}
+
+.inform-text p span:nth-of-type(even) {
+    display: none;
+}
+
+/* STYLE FOOTER*/
+footer {
+    background-color: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.footer-text {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 1150px) {
+    .container {
+        width: 720px;
+    }
+
+    .header {
+        height: 150px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .contact a {
+        margin: 0 15px;
+    }
+
+    .contact button {
+        margin: 0 15px 0 4px;
+    }
+
+    .content-kurs {
+        height: 315px;
+        padding: 0;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-position: 560px 75px;
+    }
+
+    .background-image {
+        left: 560px;
+        top: 75px;
+    }
+
+    .content_button {
+        margin-top: 52px;
+    }
+
+    .content-inform {
+        padding: 15px 0 15px;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 320px;
+    }
+
+    .header {
+        height: 210px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-bottom: 16.6px;
+    }
+
+    .contact button {
+        margin: 17px 0px 0px;
+    }
+
+    .content-kurs {
+        height: 300px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-kurs h1 {
+        line-height: normal;
+        font-size: 25px;
+        margin: 0 0 8px;
+        width: 250px;
+    }
+
+    .content-kurs p {
+        width: 200px;
+    }
+
+    .content_button {
+        margin-top: 21px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .content-kurs button {
+        margin: 13px 0 0;
+    }
+
+    .content_button {
+        position: relative;
+    }
+
+    .background-image {
+        left: 192px;
+        top: 139px;
+    }
+
+    .content-inform {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .inform {
+        position: relative;
+    }
+
+    .inform-text {
+        width: 290px;
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        min-height: 60.5px;
+        padding-bottom: 9.5px;
+        margin: 0 10px;
+    }
+
+    .inform-text p span:nth-of-type(odd) {
+        display: none;
+    }
+
+    .inform-text p span:nth-of-type(even) {
+        display: inline;
+    }
+
+    .footer-text {
+        font-size: 10px;
+        width: 261px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    body {
+        overflow-x: auto;
+    }
+
+    .hidenFromFone {
+        overflow-x: auto;
+    }
+
+    .content-kurs {
+        background-image: url(../img/laptop\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: 313px 239px;
+        background-position: 166px 139px;
+    }
+
+    .background-image {
+        display: none
+    }
+
+    .container {
+        width: auto;
+    }
+}
